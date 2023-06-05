@@ -16,3 +16,21 @@ forButton.addEventListener('click', function () {
 
     listElement.innerHTML = list;
 })
+
+
+whileButton.addEventListener('click', function () {
+
+    let list = '';
+    let index = 0;
+
+    while (index < shoppingList.length) {
+
+        list += `<li>${shoppingList[index]}</li>`;
+
+        index++;
+    }
+    console.log(index);
+
+
+    listElement.innerHTML = list;
+})
