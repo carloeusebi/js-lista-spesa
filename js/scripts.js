@@ -1,5 +1,6 @@
 const forButton = document.getElementById('for-print-button');
 const whileButton = document.getElementById('while-print-button');
+const resetButton = document.getElementById('reset-button');
 
 const listElement = document.getElementById('shopping-list');
 
@@ -33,4 +34,9 @@ whileButton.addEventListener('click', function () {
 
 
     listElement.innerHTML = list;
+})
+
+
+resetButton.addEventListener('click', function () {
+    listElement.innerText = '';
 })
